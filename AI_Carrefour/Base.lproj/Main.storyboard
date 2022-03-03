@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AI_Carrefour" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="index" translatesAutoresizingMaskIntoConstraints="NO" id="PVr-sr-QzT">
+                                <rect key="frame" x="0.0" y="0.0" width="415" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0C-P2-0oG">
+                                <rect key="frame" x="113" y="393" width="188" height="110"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="OOK-75-ckV"/>
+                                    <constraint firstAttribute="width" constant="188" id="nTg-vS-19O"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="P3f-aM-5eT" kind="presentation" id="Mwg-iF-4Nz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="q0C-P2-0oG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0YE-dL-Xqr"/>
+                            <constraint firstItem="PVr-sr-QzT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Uo1-xS-kle"/>
+                            <constraint firstItem="q0C-P2-0oG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="b5Z-2V-s49"/>
+                            <constraint firstItem="PVr-sr-QzT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kKx-Gq-ktU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60.869565217391312" y="3.3482142857142856"/>
+        </scene>
+        <!--Poprecording-->
+        <scene sceneID="oPL-hi-NV1">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="P3f-aM-5eT" customClass="poprecording" customModule="AI_Carrefour" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LYR-jt-n1d">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WMU-HV-NPM">
+                                <rect key="frame" x="82" y="358" width="250" height="180"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="microphone" translatesAutoresizingMaskIntoConstraints="NO" id="Vfl-wC-zxw" userLabel="Popup">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="140"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8YB-KT-s2z">
+                                        <rect key="frame" x="0.0" y="140" width="250" height="40"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="1Ti-Pf-sfQ"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="停止錄音">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="closepopup:" destination="P3f-aM-5eT" eventType="touchUpInside" id="Mpy-Sa-3AO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.59215686274509804" green="0.59215686274509804" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Vfl-wC-zxw" secondAttribute="trailing" id="68d-4e-7kE"/>
+                                    <constraint firstItem="8YB-KT-s2z" firstAttribute="leading" secondItem="WMU-HV-NPM" secondAttribute="leading" id="EpK-p0-1tA"/>
+                                    <constraint firstAttribute="trailing" secondItem="8YB-KT-s2z" secondAttribute="trailing" id="PRk-Dh-JuB"/>
+                                    <constraint firstAttribute="height" constant="180" id="ZTA-Pg-Efc"/>
+                                    <constraint firstItem="8YB-KT-s2z" firstAttribute="top" secondItem="Vfl-wC-zxw" secondAttribute="bottom" id="d1P-YZ-wqC"/>
+                                    <constraint firstAttribute="bottom" secondItem="8YB-KT-s2z" secondAttribute="bottom" id="dNS-k8-zf5"/>
+                                    <constraint firstAttribute="width" constant="250" id="fN5-NQ-ADH"/>
+                                    <constraint firstItem="Vfl-wC-zxw" firstAttribute="leading" secondItem="WMU-HV-NPM" secondAttribute="leading" id="ion-VZ-5qA"/>
+                                    <constraint firstItem="8YB-KT-s2z" firstAttribute="top" secondItem="Vfl-wC-zxw" secondAttribute="bottom" id="qrP-es-oyY"/>
+                                    <constraint firstItem="Vfl-wC-zxw" firstAttribute="top" secondItem="WMU-HV-NPM" secondAttribute="top" id="yz7-Rc-NUX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tJI-jO-mVF"/>
+                        <color key="backgroundColor" white="1" alpha="0.29946588010204084" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WMU-HV-NPM" firstAttribute="centerX" secondItem="LYR-jt-n1d" secondAttribute="centerX" id="6JQ-Cn-zaP"/>
+                            <constraint firstItem="WMU-HV-NPM" firstAttribute="centerX" secondItem="LYR-jt-n1d" secondAttribute="centerX" id="eCJ-WF-Cxs"/>
+                            <constraint firstItem="WMU-HV-NPM" firstAttribute="centerY" secondItem="LYR-jt-n1d" secondAttribute="centerY" id="gci-5E-pv4"/>
+                            <constraint firstItem="WMU-HV-NPM" firstAttribute="centerY" secondItem="LYR-jt-n1d" secondAttribute="centerY" id="jmX-FD-3C9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4oz-Kr-jYi"/>
+                    <connections>
+                        <outlet property="popupView" destination="WMU-HV-NPM" id="BXT-Pd-TWt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VSJ-Ip-vn3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="711.59420289855075" y="99.776785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="index" width="375" height="812"/>
+        <image name="microphone" width="100" height="100"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
