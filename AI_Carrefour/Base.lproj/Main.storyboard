@@ -12,41 +12,42 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AI_Carrefour" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="index" translatesAutoresizingMaskIntoConstraints="NO" id="PVr-sr-QzT">
-                                <rect key="frame" x="0.0" y="0.0" width="415" height="896"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="index" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PVr-sr-QzT">
+                                <rect key="frame" x="19.5" y="42" width="375" height="812"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0C-P2-0oG">
-                                <rect key="frame" x="113" y="393" width="188" height="110"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0C-P2-0oG" userLabel="Assistant">
+                                <rect key="frame" x="37" y="485" width="340" height="190"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="110" id="OOK-75-ckV"/>
-                                    <constraint firstAttribute="width" constant="188" id="nTg-vS-19O"/>
+                                    <constraint firstAttribute="height" constant="190" id="is0-Ay-rSh"/>
+                                    <constraint firstAttribute="width" constant="340" id="wfx-rL-1sV"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
-                                </buttonConfiguration>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="P3f-aM-5eT" kind="presentation" id="Mwg-iF-4Nz"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.31999003887176514" blue="0.62427455186843872" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="q0C-P2-0oG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0YE-dL-Xqr"/>
-                            <constraint firstItem="PVr-sr-QzT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Uo1-xS-kle"/>
-                            <constraint firstItem="q0C-P2-0oG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="b5Z-2V-s49"/>
-                            <constraint firstItem="PVr-sr-QzT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kKx-Gq-ktU"/>
+                            <constraint firstItem="PVr-sr-QzT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HMO-s8-6ou"/>
+                            <constraint firstItem="q0C-P2-0oG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="132" id="epp-KJ-dUp"/>
+                            <constraint firstItem="q0C-P2-0oG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g48-V4-3E9"/>
+                            <constraint firstItem="PVr-sr-QzT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pwu-PL-FhF"/>
                         </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="60.869565217391312" y="3.3482142857142856"/>
         </scene>
@@ -111,7 +112,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VSJ-Ip-vn3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="711.59420289855075" y="99.776785714285708"/>
+            <point key="canvasLocation" x="1064" y="45"/>
         </scene>
     </scenes>
     <resources>
@@ -119,9 +120,6 @@
         <image name="microphone" width="100" height="100"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
