@@ -5,21 +5,19 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AI_Carrefour" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="index" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PVr-sr-QzT">
-                                <rect key="frame" x="19.5" y="42" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="49" width="414" height="808"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0C-P2-0oG" userLabel="Assistant">
@@ -34,20 +32,26 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YMP-2x-Cw8"/>
                                     <segue destination="P3f-aM-5eT" kind="presentation" id="Mwg-iF-4Nz"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.0" green="0.31999003887176514" blue="0.62427455186843872" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.30588235294117649" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="PVr-sr-QzT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="5" id="FUc-V5-wJW"/>
                             <constraint firstItem="PVr-sr-QzT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HMO-s8-6ou"/>
                             <constraint firstItem="q0C-P2-0oG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="132" id="epp-KJ-dUp"/>
                             <constraint firstItem="q0C-P2-0oG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g48-V4-3E9"/>
                             <constraint firstItem="PVr-sr-QzT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pwu-PL-FhF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PVr-sr-QzT" secondAttribute="trailing" id="sA4-ev-dP6"/>
+                            <constraint firstItem="PVr-sr-QzT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tnW-j3-hSm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PVr-sr-QzT" secondAttribute="bottom" constant="5" id="yPy-t0-5LS"/>
                         </constraints>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="60.869565217391312" y="3.3482142857142856"/>
         </scene>
@@ -62,12 +66,12 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WMU-HV-NPM">
                                 <rect key="frame" x="82" y="358" width="250" height="180"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="microphone" translatesAutoresizingMaskIntoConstraints="NO" id="Vfl-wC-zxw" userLabel="Popup">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vfl-wC-zxw" userLabel="Popup">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="140"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8YB-KT-s2z">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8YB-KT-s2z" userLabel="stopRecord">
                                         <rect key="frame" x="0.0" y="140" width="250" height="40"/>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="1Ti-Pf-sfQ"/>
                                         </constraints>
@@ -78,21 +82,22 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="closepopup:" destination="P3f-aM-5eT" eventType="touchUpInside" id="Mpy-Sa-3AO"/>
+                                            <action selector="stopRecordAudio:" destination="P3f-aM-5eT" eventType="touchUpInside" id="4UB-ug-ZOI"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.59215686274509804" green="0.59215686274509804" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Vfl-wC-zxw" secondAttribute="trailing" id="68d-4e-7kE"/>
+                                    <constraint firstItem="8YB-KT-s2z" firstAttribute="top" secondItem="Vfl-wC-zxw" secondAttribute="bottom" id="EOL-wh-ihP"/>
                                     <constraint firstItem="8YB-KT-s2z" firstAttribute="leading" secondItem="WMU-HV-NPM" secondAttribute="leading" id="EpK-p0-1tA"/>
                                     <constraint firstAttribute="trailing" secondItem="8YB-KT-s2z" secondAttribute="trailing" id="PRk-Dh-JuB"/>
                                     <constraint firstAttribute="height" constant="180" id="ZTA-Pg-Efc"/>
                                     <constraint firstItem="8YB-KT-s2z" firstAttribute="top" secondItem="Vfl-wC-zxw" secondAttribute="bottom" id="d1P-YZ-wqC"/>
                                     <constraint firstAttribute="bottom" secondItem="8YB-KT-s2z" secondAttribute="bottom" id="dNS-k8-zf5"/>
                                     <constraint firstAttribute="width" constant="250" id="fN5-NQ-ADH"/>
-                                    <constraint firstItem="Vfl-wC-zxw" firstAttribute="leading" secondItem="WMU-HV-NPM" secondAttribute="leading" id="ion-VZ-5qA"/>
-                                    <constraint firstItem="8YB-KT-s2z" firstAttribute="top" secondItem="Vfl-wC-zxw" secondAttribute="bottom" id="qrP-es-oyY"/>
-                                    <constraint firstItem="Vfl-wC-zxw" firstAttribute="top" secondItem="WMU-HV-NPM" secondAttribute="top" id="yz7-Rc-NUX"/>
+                                    <constraint firstItem="Vfl-wC-zxw" firstAttribute="leading" secondItem="WMU-HV-NPM" secondAttribute="leading" id="fac-lU-m4V"/>
+                                    <constraint firstItem="Vfl-wC-zxw" firstAttribute="top" secondItem="WMU-HV-NPM" secondAttribute="top" id="g8I-Nn-NUN"/>
+                                    <constraint firstAttribute="trailing" secondItem="Vfl-wC-zxw" secondAttribute="trailing" id="rYk-qN-ntZ"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -108,18 +113,15 @@
                     <navigationItem key="navigationItem" id="4oz-Kr-jYi"/>
                     <connections>
                         <outlet property="popupView" destination="WMU-HV-NPM" id="BXT-Pd-TWt"/>
+                        <outlet property="recordingGIF" destination="Vfl-wC-zxw" id="pCL-lM-qRT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VSJ-Ip-vn3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1064" y="45"/>
+            <point key="canvasLocation" x="1063.768115942029" y="44.866071428571423"/>
         </scene>
     </scenes>
     <resources>
         <image name="index" width="375" height="812"/>
-        <image name="microphone" width="100" height="100"/>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>

@@ -17,15 +17,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="loading" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q5t-OT-CaF">
-                                <rect key="frame" x="0.0" y="0.0" width="415" height="896"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q5t-OT-CaF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Q5t-OT-CaF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4MO-jj-qBJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Q5t-OT-CaF" secondAttribute="trailing" id="OWz-rs-666"/>
                             <constraint firstItem="Q5t-OT-CaF" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="WE3-mc-11e"/>
+                            <constraint firstItem="Q5t-OT-CaF" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="YsJ-ta-DDD"/>
                             <constraint firstItem="Q5t-OT-CaF" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="aV2-XL-aUV"/>
+                            <constraint firstAttribute="bottom" secondItem="Q5t-OT-CaF" secondAttribute="bottom" id="sqO-PE-eRZ"/>
                         </constraints>
                     </view>
                 </viewController>

@@ -11,9 +11,14 @@
 		FF77A3A127D07F90004FB0DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF77A3A027D07F90004FB0DA /* SceneDelegate.swift */; };
 		FF77A3A327D07F90004FB0DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF77A3A227D07F90004FB0DA /* ViewController.swift */; };
 		FF77A3A627D07F90004FB0DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF77A3A427D07F90004FB0DA /* Main.storyboard */; };
-		FF77A3A827D07F93004FB0DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF77A3A727D07F93004FB0DA /* Assets.xcassets */; };
 		FF77A3AB27D07F93004FB0DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF77A3A927D07F93004FB0DA /* LaunchScreen.storyboard */; };
 		FF77A3B327D08FC3004FB0DA /* poprecording.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF77A3B227D08FC3004FB0DA /* poprecording.swift */; };
+		FF79352227D12AF90010FE13 /* GIFsupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF79352127D12AF90010FE13 /* GIFsupport.swift */; };
+		FF79352427D12B990010FE13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF79352327D12B990010FE13 /* Assets.xcassets */; };
+		FF79352827D133C50010FE13 /* wave.gif in Resources */ = {isa = PBXBuildFile; fileRef = FF79352727D133C50010FE13 /* wave.gif */; };
+		FF79352A27D137880010FE13 /* wave2.gif in Resources */ = {isa = PBXBuildFile; fileRef = FF79352927D137880010FE13 /* wave2.gif */; };
+		FF79352C27D139200010FE13 /* wave3.gif in Resources */ = {isa = PBXBuildFile; fileRef = FF79352B27D139200010FE13 /* wave3.gif */; };
+		FF79352E27D139970010FE13 /* wave4.gif in Resources */ = {isa = PBXBuildFile; fileRef = FF79352D27D139970010FE13 /* wave4.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +27,15 @@
 		FF77A3A027D07F90004FB0DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FF77A3A227D07F90004FB0DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FF77A3A527D07F90004FB0DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FF77A3A727D07F93004FB0DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF77A3AA27D07F93004FB0DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF77A3AC27D07F93004FB0DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF77A3B227D08FC3004FB0DA /* poprecording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = poprecording.swift; sourceTree = "<group>"; };
+		FF79352127D12AF90010FE13 /* GIFsupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFsupport.swift; sourceTree = "<group>"; };
+		FF79352327D12B990010FE13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF79352727D133C50010FE13 /* wave.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wave.gif; sourceTree = "<group>"; };
+		FF79352927D137880010FE13 /* wave2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wave2.gif; sourceTree = "<group>"; };
+		FF79352B27D139200010FE13 /* wave3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wave3.gif; sourceTree = "<group>"; };
+		FF79352D27D139970010FE13 /* wave4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wave4.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +72,15 @@
 				FF77A3A027D07F90004FB0DA /* SceneDelegate.swift */,
 				FF77A3A227D07F90004FB0DA /* ViewController.swift */,
 				FF77A3A427D07F90004FB0DA /* Main.storyboard */,
+				FF79352127D12AF90010FE13 /* GIFsupport.swift */,
 				FF77A3B227D08FC3004FB0DA /* poprecording.swift */,
-				FF77A3A727D07F93004FB0DA /* Assets.xcassets */,
 				FF77A3A927D07F93004FB0DA /* LaunchScreen.storyboard */,
 				FF77A3AC27D07F93004FB0DA /* Info.plist */,
+				FF79352327D12B990010FE13 /* Assets.xcassets */,
+				FF79352727D133C50010FE13 /* wave.gif */,
+				FF79352927D137880010FE13 /* wave2.gif */,
+				FF79352B27D139200010FE13 /* wave3.gif */,
+				FF79352D27D139970010FE13 /* wave4.gif */,
 			);
 			path = AI_Carrefour;
 			sourceTree = "<group>";
@@ -128,8 +143,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF79352827D133C50010FE13 /* wave.gif in Resources */,
 				FF77A3AB27D07F93004FB0DA /* LaunchScreen.storyboard in Resources */,
-				FF77A3A827D07F93004FB0DA /* Assets.xcassets in Resources */,
+				FF79352E27D139970010FE13 /* wave4.gif in Resources */,
+				FF79352C27D139200010FE13 /* wave3.gif in Resources */,
+				FF79352427D12B990010FE13 /* Assets.xcassets in Resources */,
+				FF79352A27D137880010FE13 /* wave2.gif in Resources */,
 				FF77A3A627D07F90004FB0DA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,6 +164,7 @@
 				FF77A3B327D08FC3004FB0DA /* poprecording.swift in Sources */,
 				FF77A39F27D07F90004FB0DA /* AppDelegate.swift in Sources */,
 				FF77A3A127D07F90004FB0DA /* SceneDelegate.swift in Sources */,
+				FF79352227D12AF90010FE13 /* GIFsupport.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
