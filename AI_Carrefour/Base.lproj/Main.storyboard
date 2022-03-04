@@ -82,7 +82,6 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="closepopup:" destination="P3f-aM-5eT" eventType="touchUpInside" id="Mpy-Sa-3AO"/>
-                                            <action selector="stopRecordAudio:" destination="P3f-aM-5eT" eventType="touchUpInside" id="4UB-ug-ZOI"/>
                                         </connections>
                                     </button>
                                 </subviews>
